@@ -1,0 +1,297 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B1120;
+    color: #E2E8F0;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #111C30;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #3B82F6;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #60A5FA;
+}
+
+/* HERO SECTION */
+
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    min-height: 570px;
+    padding: 80px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #60A5FA;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #3B82F6;
+}
+
+.hero h2 {
+    font-size: 27px;
+    color: #94A3B8;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.welcome) {
+    color: #AAB8CC;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2563EB;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-3px);
+}
+
+/* PROFILE CIRCLE */
+
+.profile-circle {
+    width: 260px;
+    height: 260px;
+    border: 5px solid #3B82F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1E3A8A, #111C30);
+    box-shadow: 0 0 35px #2563EB55;
+}
+
+.profile-circle span {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #3B82F6;
+}
+
+/* ABOUT CARD */
+
+.about-card {
+    background-color: #111C30;
+    padding: 35px;
+    border: 1px solid #263852;
+    border-radius: 15px;
+    color: #B8C5D8;
+}
+
+.about-card h3 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+}
+
+.about-card strong {
+    color: #60A5FA;
+}
+
+/* SKILLS AND PROJECT CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #111C30;
+    padding: 30px;
+    border: 1px solid #263852;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #3B82F6;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #60A5FA;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #AAB8CC;
+}
+
+/* GOALS */
+
+.goal-list {
+    padding-left: 25px;
+}
+
+.goal-list li {
+    margin-bottom: 12px;
+}
+
+/* CONTACT */
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #111C30;
+    color: #94A3B8;
+}
+
+footer h3 {
+    color: #60A5FA;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .profile-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
